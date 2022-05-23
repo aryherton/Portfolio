@@ -15,8 +15,12 @@ export default function Header() {
     <HeaderWrapper>
       <div className="divMainHeader">
         <div className="myImageHeader">
-          <img src={ myLogo } alt="my_logo" id="myLogo" />
-          <img src={ myPhoto } alt="my_photo" id="myPhoto"/>
+          <div id="myLogo"> 
+            <img src={ myLogo } alt="my_logo" />
+          </div>
+          <div id="myPhoto">
+            <img src={ myPhoto } alt="my_photo" />
+          </div>
           <div id="socialMediaHeader">
             <img src={ linkedinIcon } alt="Linkedin_Icon" />
             <img src={ githubIcon } alt="Github_Icon" />
