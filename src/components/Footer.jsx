@@ -1,11 +1,11 @@
 import React from "react";
 
+import { FooterWrapper } from "../styles";
+
 export default function Footer() {
   return (
-    <>
-      <footer>
-        <h1>Footer</h1>
-      </footer>
-    </>
+    <FooterWrapper>
+      <h1>Footer</h1>
+    </FooterWrapper>
   )
 }
