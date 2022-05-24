@@ -11,10 +11,10 @@ export default function Home() {
       <div id="menuSuper">
         <nav>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>Home &#x1F3E0;</li>
+            <li>About &#x1F4DC;</li>
+            <li>Projects &#x1F4BB;</li>
+            <li>Contact ☎️</li>
           </ul>
         </nav>
       </div>
