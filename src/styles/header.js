@@ -1,10 +1,10 @@
-import style from 'styled-components';
+import styled from 'styled-components';
 
-export const HeaderWrapper = style.header`
+export const HeaderWrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
+  height: 300px;
   width: 100%;
   background-color: ${props => props.theme.colors.primary};
 
@@ -12,7 +12,7 @@ export const HeaderWrapper = style.header`
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: transparent;
+    background-color: ${props => props.theme.colors.tertiary};
 
     div.myImageHeader {
       position: relative;
@@ -27,6 +27,7 @@ export const HeaderWrapper = style.header`
       #myLogo {
         min-width: 70%;
         height: 80px;
+        margin-left: 8%;
         -webkit-transform: skew(-30deg); /* Chrome, Opera */
         -ms-transform: skew(-30deg); /* IE */
             transform: skew(-30deg); /* Padrão */
@@ -38,9 +39,9 @@ export const HeaderWrapper = style.header`
       }
   
       #myPhoto {
-        z-index: 2;
+        z-index: 1;
         position: absolute;
-        top: 30%;
+        top: 48%;
         background-color: transparent;
 
         img {
