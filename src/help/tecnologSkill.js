@@ -1,0 +1,27 @@
+const arrSkill = [
+  'HTML5',
+  'CSS',
+  'Tailwind',
+  'StyleComponents',
+  'JavaScript',
+  'Typescript',
+  'React',
+  'MySQL',
+  'SQL',
+  'Sequelize',
+  'TDD',
+  'Jest',
+  'Mocha',
+  'Chai',
+  'Sinon',
+  'React-Test-Library',
+  'Redux',
+  'Git',
+  'GitHub',
+  'Docker',
+  'Heroku',
+  'NodeJS',
+  'Express',
+];
+
+export default arrSkill;
