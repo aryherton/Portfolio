@@ -15,7 +15,13 @@ export const theme = {
   colors: {
     primary: '#E5E9F0',
     secondary: '#FFFEFF',
-    tertiary: '#34363A',
-    quaternary: '#AF8A6E',
+    tertiary: '#2D2520',
+    quaternary: '#6C6157',
+  },
+  font: {
+    primary: 'Roboto',
+    secondary: 'Bebas Neue',
+    tertiary: 'Open Sans',
+    quaternary: 'Abril Fatface',
   }
 }
