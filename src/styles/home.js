@@ -1,7 +1,6 @@
-import style from 'styled-components';
+import styled from 'styled-components';
 
-export const HomeWrapper = style.div`
-  position: relative;
+export const HomeWrapper = styled.div`
   margin: 5px auto;
   display: flex;
   flex-direction: column;
@@ -13,18 +12,21 @@ export const HomeWrapper = style.div`
     position: relative;
     width: 100%;
     height: 30px;
-    background-color: gray;
+    background-color: ${props => props.theme.colors.tertiary};
 
     ul {
       position: absolute;
       right: 0;
       bottom: 0;
-      width: 30%;
+      width: 40%;
       display: flex;
+      background-color: transparent;
 
       li {
-        color: white;
-        background-color: gray;
+        font-family: 'Playfair Display SC', serif;
+        color: ${props => props.theme.colors.quaternary};
+        font-weight: bold;
+        background-color: transparent;
         list-style: none;
         width: 100%;
       }
@@ -32,10 +34,8 @@ export const HomeWrapper = style.div`
   }
 
   main {
-    position: relative;
-    z-index: 1;
     width: 100%;
-    height: 400px;
-    background-color: transparent;
+    height: 100%;
+    background-color: ${props => props.theme.colors.tertiary};
   }
 `;
