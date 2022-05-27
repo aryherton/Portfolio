@@ -3,6 +3,10 @@ import React from 'react';
 import { FooterWrapper } from '../styles';
 import { instaFooter, gitHub32, linkedin32 } from '../image';
 
+import { FcAddressBook } from 'react-icons/fc';
+import { FcCallback } from 'react-icons/fc';
+import { reactIcon,styledComp } from '../image';
+
 export default function Footer() {
   return (
     <FooterWrapper>
@@ -10,8 +14,14 @@ export default function Footer() {
         <div id="footerContact">
           <h3>Contato</h3>
           <ul>
-            <li>Email</li>
-            <li>Fone</li>
+            <li>
+              <FcAddressBook />
+                &nbsp;&nbsp;&nbsp;&nbsp;aryhertonbarbosa@gmail.com
+            </li>
+            <li>
+              <FcCallback />
+                &nbsp;&nbsp;&nbsp;&nbsp;+55 (86) 9 9855-8957
+            </li>
           </ul>
         </div>
         <div id="footerSocialMedia">
@@ -25,8 +35,16 @@ export default function Footer() {
         <div id="footerTecnologias">
           <h3>Tecnologias</h3>
           <ul>
-            <li>ReactJs</li>
-            <li>Style-Components</li>
+            <li>
+              <img src={ reactIcon } alt="icon-react" />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              ReactJs
+            </li>
+            <li>
+              <img id="iconStyledComp" src={ styledComp } alt="icon-styled-components" />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Style-Components
+            </li>
           </ul>
         </div>
       </div>
