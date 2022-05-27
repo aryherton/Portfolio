@@ -1,9 +1,11 @@
 import React from 'react';
 
-import { HomeWrapper } from '../styles';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import About from '../components/About';
+import Skills from '../components/Skills';
+
+import { HomeWrapper } from '../styles';
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
       <Header />
       <main>
         <About />
+        <Skills />
       </main>
       <Footer />
     </HomeWrapper>
