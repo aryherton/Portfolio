@@ -3,23 +3,24 @@ import React from 'react';
 import { AboutWrapper } from '../styles';
 
 export const textPre = String.raw`
-   Sou desenvolvedor front-end, apaixonado
-por tecnologia e por criar sistemas que
-possam impactar vidas. Atualmente adquerindo
-conhecimento em back-end, na escola de
-programação Trybe.
-
+Fique à vontade par dar uma olhadinha😉. Aqui você encontra
+um pouco da minha história, projetos e caso precise de alguma
+informação a mais, no canto superior direito você encontra minhas
+redes sociais e whatsApp... aguarda seu contato.
 `;
 
 export default function About() {
   return (
     <AboutWrapper>
-      <h1>Olá, sou Ary Barbosa.</h1>
-      <blockquote>
-        <pre>
-          { textPre }
-        </pre>
-      </blockquote>
+      <div id="textIntro">
+        <h1>Olá, sou Ary Barbosa.</h1>
+        <h2>Seja bem-vindo ao meu portfólio.</h2>
+        <blockquote>
+          <pre>
+            { textPre }
+          </pre>
+        </blockquote>
+      </div>
     </AboutWrapper>
   );
 }
