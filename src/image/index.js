@@ -7,6 +7,8 @@ import checkMark2 from './check-mark2.png';
 import instaFooter from './instagram32px.png';
 import gitHub32 from './github32px.png';
 import linkedin32 from './linkedin32.png';
+import reactIcon from './reactIcon.png';
+import styledComp from './styleComponentsIcon.png';
 
 export {
   myLogo,
@@ -17,5 +19,7 @@ export {
   checkMark2,
   instaFooter,
   gitHub32,
-  linkedin32
+  linkedin32,
+  reactIcon,
+  styledComp
 }
