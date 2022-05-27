@@ -2,7 +2,7 @@ import { GlobalStyle, theme } from './globalStyle';
 import { HomeWrapper } from './home';
 import { HeaderWrapper } from './header';
 import { AboutWrapper } from './about';
-import { MenuHomeTop } from './menuHomeTop';
+import { SkillsWrapper } from './skills';
 import { FooterWrapper } from './footer';
 
 export {
@@ -11,6 +11,6 @@ export {
   HomeWrapper,
   HeaderWrapper,
   AboutWrapper,
-  MenuHomeTop,
+  SkillsWrapper,
   FooterWrapper,
 }
