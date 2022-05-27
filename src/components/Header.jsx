@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { HeaderWrapper } from "../styles";
+import { HeaderWrapper } from '../styles';
 
 import {
   myLogo,
