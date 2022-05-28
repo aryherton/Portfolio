@@ -24,7 +24,6 @@ export default function Carousel() {
         {
           arrImg.map((item, index) => {
             const { img, alt, title, tecnology, describe, link } = item;
-             console.log(tecnology, 'lllllllllllllllllllllllll');
             return (
               <div key={ index } id="itemCarousel">
               <div id="image">
@@ -32,14 +31,18 @@ export default function Carousel() {
               </div>
               <div id="info">
                 <h1>{ title }</h1>
-                <span>{ describe }</span>
-                <span>
-                  <h3>Desenvolvido com:</h3>
-                  { tecnology.map((item, index) => (
-                    <img key={ index } src={ item } alt="icon" />
-                  )) }
-                </span>
-                <span><a href={ link }>{ link }</a></span>
+                <div id="describes">
+                  <span>{ describe }</span>
+                  <span id="tecnologias">
+                    <h3>Desenvolvido com:</h3>
+                    { tecnology.map((item, index) => (
+                      <img key={ index } src={ item } alt="icon" />
+                    )) }
+                  </span>
+                  <span>
+                    <a href={ link }>{ link }</a>
+                  </span>
+                </div>
               </div>
             </div>
             );
