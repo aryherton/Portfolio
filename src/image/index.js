@@ -8,7 +8,12 @@ import instaFooter from './instagram32px.png';
 import gitHub32 from './github32px.png';
 import linkedin32 from './linkedin32.png';
 import reactIcon from './reactIcon.png';
+import reactPng from './react.png';
 import styledComp from './styleComponentsIcon.png';
+import projectTrivia from './projectTrivia.png';
+import chevronLeft from './chevron-esquerda.png';
+import trello from './trello.png';
+import redux from './redux-.png';
 
 export {
   myLogo,
@@ -21,5 +26,10 @@ export {
   gitHub32,
   linkedin32,
   reactIcon,
-  styledComp
+  styledComp,
+  projectTrivia,
+  chevronLeft,
+  trello,
+  redux,
+  reactPng,
 }
