@@ -7,13 +7,12 @@ import { chevronLeft } from '../image';
 export default function Carousel() {
   const carouselRef = useRef(null);
 
-  const buttonClickScrollRight = (e) => {
+  const buttonClickScrollLeft = (e) => {
     e.preventDefault();
-    console.log('clicou');
     carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth;
   }
 
-  const buttonClickScrollLeft = (e) => {
+  const buttonClickScrollRight = (e) => {
     e.preventDefault();
     carouselRef.current.scrollLeft += carouselRef.current.offsetWidth;
   }
@@ -24,6 +23,7 @@ export default function Carousel() {
         {
           arrImg.map((item, index) => {
             const { img, alt, title, tecnology, describe, link } = item;
+
             return (
               <div key={ index } id="itemCarousel">
               <div id="image">
@@ -50,11 +50,11 @@ export default function Carousel() {
         }
       </div>
       <div id="buttons-chevron">
-        <button onClick={ buttonClickScrollRight }>
-        <img src={ chevronLeft } alt="scroll-right" />
-        </button>
         <button onClick={ buttonClickScrollLeft }>
-        <img src={ chevronLeft } alt="scroll-left" />
+          <img src={ chevronLeft } alt="scroll-left" />
+        </button>
+        <button onClick={ buttonClickScrollRight }>
+          <img src={ chevronLeft } alt="scroll-right" />
         </button>
       </div>
     </CarouselWrapper>
