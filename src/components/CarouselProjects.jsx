@@ -32,17 +32,17 @@ export default function Carousel() {
               <div id="info">
                 <h1>{ title }</h1>
                 <div id="describes">
-                  <span>{ describe }</span>
+                  <span id="textDescribe">{ describe }</span>
                   <span id="tecnologias">
                     <h3>Desenvolvido com:</h3>
                     { tecnology.map((item, index) => (
                       <img key={ index } src={ item } alt="icon" />
                     )) }
                   </span>
-                  <span>
-                    <a href={ link }>{ link }</a>
-                  </span>
                 </div>
+                <span>
+                  <a href={ link }>{ link }</a>
+                </span>
               </div>
             </div>
             );
