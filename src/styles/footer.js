@@ -4,7 +4,7 @@ export const FooterWrapper = style.footer`
   width: 100%;
   height: 200px;
   background-color: #442431;
-  box-shadow: 0px -4px 15px 1px rgba(0,0,0,0.75);
+  // box-shadow: 0px -4px 15px 1px rgba(0,0,0,0.75);
 
   div, h3, ul, li, img {
       background-color: transparent;
