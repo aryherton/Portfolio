@@ -8,6 +8,7 @@ export const CarouselWrapper = styled.section`
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+
   box-shadow: 0px -4px 15px 1px #442431;
 
   // @media (max-width: 768px) {}
@@ -18,8 +19,9 @@ export const CarouselWrapper = styled.section`
     align-items: center;
     box-shadow: 1px 1px 15px 1px #100107;
     display: flex;
-    height: 95%;
+    height: 500px;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     width: 50%;
     position: relative;
@@ -34,6 +36,7 @@ export const CarouselWrapper = styled.section`
       background-color: transparent;
       border: 3px solid #2D2520;
       width: 100%;
+      position: relative;
       color: #e6e1dd;
       
       #image {
@@ -51,30 +54,44 @@ export const CarouselWrapper = styled.section`
       #info {
         bottom: 5%;
         width: 100%;
+        height: 25%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        a {
-          text-decoration: none;
-          color: #f9f03a;
-          font-size: 1rem;
-        }
+        justify-content: center;
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        box-shadow: 0px 2px 30px #000000;
+        color: #f5e61d;
         h1 {
-          margin-top: 10px;
-          font-size: 15px;
+          font-size: 1.3em;
         }
-        span {
+        #describes {
+          height: 30%;
+          #textDescribe {
+            font-size: 1em;
+            font-weight: bold;
+          }
+
+          span#tecnologias {
           font-size: 12px;
-          display: block;
           text-align: center;
-          padding: 5px;
-          border-radius: 10px;
+          position: absolute;
+          bottom: 10px;
+          right: 30px;
+          color: #08ec6f;
           h3 {
             font-size: 12px;
           }
           img {
             margin-left: 5px;
           }
+        }
+        }
+        a {
+        text-decoration: none;
+        color: #08ec6f;
+        font-size: 1rem;
         }
       }
     }
