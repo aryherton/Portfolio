@@ -7,15 +7,15 @@ import { chevronLeft } from '../image';
 export default function Carousel() {
   const carouselRef = useRef(null);
 
-  const buttonClikScrollRight = (e) => {
+  const buttonClickScrollRight = (e) => {
     e.preventDefault();
     console.log('clicou');
-    carouselRef.current.scrollLeft += carouselRef.current.offsetWidth;
+    carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth;
   }
 
-  const buttonClikScrollLeft = (e) => {
+  const buttonClickScrollLeft = (e) => {
     e.preventDefault();
-    carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth;
+    carouselRef.current.scrollLeft += carouselRef.current.offsetWidth;
   }
 
   return(
@@ -50,10 +50,10 @@ export default function Carousel() {
         }
       </div>
       <div id="buttons-chevron">
-        <button onClick={ buttonClikScrollRight }>
+        <button onClick={ buttonClickScrollRight }>
         <img src={ chevronLeft } alt="scroll-right" />
         </button>
-        <button onClick={ buttonClikScrollLeft }>
+        <button onClick={ buttonClickScrollLeft }>
         <img src={ chevronLeft } alt="scroll-left" />
         </button>
       </div>
