@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import About from '../components/About';
 import Skills from '../components/Skills';
+import CarouselProjects from '../components/CarouselProjects';
 
 import { HomeWrapper } from '../styles';
 
@@ -22,8 +23,11 @@ export default function Home() {
       </div>
       <Header />
       <main>
-        <About />
-        <Skills />
+        <section>
+          <Skills />
+          <About />
+        </section>
+        <CarouselProjects />
       </main>
       <Footer />
     </HomeWrapper>
