@@ -6,7 +6,7 @@ export const textPre = String.raw`
 Fique à vontade par dar uma olhadinha😉. Aqui você encontra
 um pouco da minha história, projetos e caso precise de alguma
 informação a mais, no canto superior direito você encontra minhas
-redes sociais e whatsApp... aguarda seu contato.
+redes sociais e whatsApp... aguardo seu contato.
 `;
 
 export default function About() {
