@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-export const SkillsWrapper = styled.section`
+export const SkillsWrapper = styled.div`
   height: 100%;
   width: 100%;
   justify-content: center;
   background-color: transparent;
+  margin: 140px 0px 0px 50px;
 
   #divMainSkills {
     background-color: #EBE2D5;
