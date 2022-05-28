@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CarouselWrapper = styled.section`
   width: 100%;
-  height: 550px;
+  height: 650px;
   background-color: #EBE2D5;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ export const CarouselWrapper = styled.section`
   }
   #container {
     align-items: center;
-    boder-radius: 16px;
+    box-shadow: 1px 1px 15px 1px #100107;
     display: flex;
     height: 95%;
     overflow-x: auto;
